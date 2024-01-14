@@ -1,0 +1,80 @@
+<style>
+  @font-face {
+    font-family: "nodesto-condensed";
+    src: url("path_to_nodesto_condensed_font") format("opentype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Scaly Sans";
+    src: url("path_to_scaly_sans_font") format("opentype");
+    font-weight: normal;
+  }
+  
+  .CardFront {
+    width: auto;
+    border-radius: 8px;
+    background-color: white; /* Background color set to white */
+    border: 5px solid black; /* Added black border */
+  }
+
+  .CardContent {
+    padding: 0.625rem;
+    font-family: "Scaly Sans", serif;
+    font-weight: 300;
+  }
+
+  .Title {
+    padding: 0.125rem 0.5rem;
+    background-color: #e8ebec;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 2.00rem;
+    font-family: "nodesto-condensed", serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .BlackBar {
+    height: 3px;
+    background-color: black;
+  }
+
+  .DetailsContainer {
+    overflow: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .DetailsBlock {
+    padding: 0.1875rem 0.5rem 0.6875rem;
+    background-color: #e8ebec;
+    font-size: 1.8rem;
+  }
+.description {
+  border-top: 3px solid black; /* Single solid line at the top */
+  border-bottom: 3px solid black; /* Single solid line at the bottom */
+  padding: 10px; /* Optional: Adjusts the space inside the container */
+  /* Add other styles as needed */
+}
+
+</style>
+
+<div class='CardFront'>
+  <div class='CardContent'>    
+    <div class="Title">{{ it.name }}</div>
+    <div class="BlackBar"></div>
+    <div class="DetailsContainer">
+      <div class="DetailsBlock"><b>Spell Level:</b> {{ it.slot}}</div>
+      <div class="DetailsBlock"><b>Caster Level:</b> {{ it.caster}}</div>
+      <div class="DetailsBlock"><b>Charges:</b> ________________________ </div>
+     
+<div class="description">
+  <div class="DetailsBlock"><b>Description:</b> </div>
+  <div class="DetailsBlock">{{ it.description }}</div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
