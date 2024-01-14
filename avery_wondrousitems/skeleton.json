@@ -1,8 +1,8 @@
 {
-	"Description": "Sample Description",
-	"aura": "Sample Aura",
-	"casterlevel": "Sample Caster Level",
-	"name": "Sample Name",
-	"slot": "Sample Slot",
-	"value": "Sample Value"
+	"Description": "Description",
+	"aura": "Aura",
+	"casterlevel": "Caster Level",
+	"name": "Name",
+	"slot": "Slot",
+	"value": "Value"
 }
